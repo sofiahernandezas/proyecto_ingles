@@ -1,0 +1,99 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+section {
+   
+    width: 100%; 
+}
+
+.ts {
+    background-color: #a97d98; /* Fondo */
+    color: #f3e8ef;           /* Texto */
+    border-color: #a97d98;    /* Bordes */
+
+    max-width: 1300px;        /* Ancho máximo */
+    margin: 0 auto;           /* Centra la sección */
+    padding-top: 20px;            /* Espaciado interior para que el contenido no quede pegado al borde */
+    
+}
+
+img#globo.img-fluid {
+    width: 100%;        /* Asegura que la imagen sea responsiva */
+    max-width: 250px;   /* Ancho máximo de la imagen */
+    height: auto;       /* Mantiene la proporción de la imagen */
+    margin-bottom: 20px; /* Espaciado inferior para separar la imagen del texto */
+   
+}
+
+.row {
+    display: flex;             /* Usamos Flexbox para alinear los elementos */
+    justify-content: center;   /* Centra los elementos en el eje horizontal */
+    align-items: center;       /* Centra los elementos en el eje vertical */
+    gap: 20px;                 /* Añade un espacio controlado entre la imagen y el texto */
+}
+
+.text-center {
+    text-align: center;        /* Centra el contenido de la columna de la imagen */
+}
+
+/* Estilos para las tarjetas */
+.card {
+    width: 100%;
+    max-width: 300px;             /* Tamaño máximo de la tarjeta */
+    background-color: white;     /* Fondo blanco de la tarjeta */
+    border-radius: 10px;         /* Bordes redondeados */
+    overflow: hidden;            /* Hace que el contenido no se desborde */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición para el hover */
+    cursor: pointer;             /* Muestra el cursor en forma de mano */
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Efecto de elevar la tarjeta */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Aumenta la sombra para un efecto más pronunciado */
+}
+
+/* Estilo para la imagen de la tarjeta */
+.card-img {
+    width: 100%;
+    height: 200px;                /* Ajustamos el alto de la imagen */
+    object-fit: cover;            /* Ajusta la imagen sin distorsionarla */
+}
+
+/* Contenido de la tarjeta */
+.card-content {
+    padding: 15px;
+    text-align: center;           /* Centra el texto en la tarjeta */
+}
+
+.card-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;                  /* Color oscuro para el título */
+}
+
+.card-description {
+    font-size: 1rem;
+    color: #777;                  /* Color más claro para la descripción */
+    margin-bottom: 15px;
+}
+
+/* Estilo del enlace */
+.card-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #a97d98;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.card-link:hover {
+    background-color: #735f70;   /* Cambio de color al pasar el cursor */
+}
